@@ -135,7 +135,8 @@ class _SkeletonState extends State<Skeleton>
   @override
   Widget build(BuildContext context) {
     // Get the correct text color and calculate the correct opcity
-    Color _themeTextColor = Theme.of(context).textTheme.bodyText1!.color!;
+    Color _themeTextColor =
+        Theme.of(context).textTheme.bodyLarge?.color ?? const Color(0xfff6f6f6);
     double _themeOpacity =
         Theme.of(context).brightness == Brightness.light ? 0.11 : 0.13;
 
